@@ -9,9 +9,19 @@ var user = require('readline-sync')
 
 var result1 = user.question("Escolha uma opção: A = O programa fecha / B = Vamos realizar uma soma: ")
 
-while (result1 != 'A'){
+while (result1 != 'A' && result1 != 'a' && result1 === 'B' || result1 === 'b'){
     num1 = user.questionInt("Escreva um número inteiro: ")
     num2 = user.questionInt("Escreva um número inteiro: ")
     console.log(num1 + num2)
-    result1 = user.questionInt("Deseja fazer outra operação? (A = SIM / B = NÃO): ")
+    result1 = user.question("Deseja fazer outra operação? A = O programa fecha / B = Vamos realizar uma soma: ")
 }
+while (result1 != 'A' && result1 != 'a' && result1 != 'b' && result1 != 'B'){
+    console.log("Você não escolheu uma opção correta")
+    result1 = user.question("Escolha uma opção: A = O programa fecha / B = Vamos realizar uma soma: ")}
+    while (result1 != 'A' && result1 != 'a' && result1 === 'B' || result1 === 'b'){
+        num1 = user.questionInt("Escreva um número inteiro: ")
+        num2 = user.questionInt("Escreva um número inteiro: ")
+        console.log(num1 + num2)
+        result1 = user.question("Deseja fazer outra operação? A = O programa fecha / B = Vamos realizar uma soma: ")
+}
+console.log("Fechando Programa")
