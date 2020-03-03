@@ -7,3 +7,4 @@ while(r1 != '-1'){
     r1 = user.questionInt("Digite um numero: ")
 }
 console.log(Math.max.apply(null, lista))
+console.log(Math.min.apply(null, lista))

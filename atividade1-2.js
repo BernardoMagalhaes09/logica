@@ -1,6 +1,6 @@
-var user = require('readline-sync'); //importa a biblioteca readline-sync na variavel user
+var user = require('readline-sync'); 
 
-var resultadoDoUsuario = user.question("Escreva um número: "); //chamada método question da biblioteca readline-sync
+var resultadoDoUsuario = user.question("Escreva um número: "); 
 
 var n = resultadoDoUsuario
 
